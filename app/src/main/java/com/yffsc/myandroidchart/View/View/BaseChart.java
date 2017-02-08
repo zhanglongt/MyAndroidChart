@@ -44,18 +44,18 @@ public abstract class BaseChart extends ViewGroup{
         init();
     }
 
-    /**
-     * 放入数据
-     */
-    ArrayList<ChartData> barChartData;
+//    /**
+//     * 放入数据
+//     */
+//    ArrayList<ChartData> barChartData;
     /**
      * 设置每条柱状图的目标值，除以max即为比例
      */
     protected ArrayList<Float> respTarget;
-    /**
-     * 处理后的显示值
-     */
-    protected ArrayList<String> respTargetValue;
+//    /**
+//     * 处理后的显示值
+//     */
+//    protected ArrayList<String> respTargetValue;
     /**
      * 每条柱状图的名字
      */
@@ -224,9 +224,9 @@ public abstract class BaseChart extends ViewGroup{
      */
     protected void init(){
         setWillNotDraw(false);//不设成，ondraw就不会被执行了。
-        barChartData=new ArrayList<>();
+        //barChartData=new ArrayList<>();
         respTarget=new ArrayList<>();
-        respTargetValue=new ArrayList<>();
+        //respTargetValue=new ArrayList<>();
         respName=new ArrayList<>();
         barProgress = new Float[0];
         screenHeight = getResources().getDisplayMetrics().heightPixels;
